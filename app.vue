@@ -1,9 +1,12 @@
 <template>
   <div>
-    <Nav class="lg:px-32 px-5"/>
+    <Nav class="lg:mx-16 xl:mx-20 px-5"/>
+
+    <hr>
+    
     <NuxtPage />
 
-    <Footer class="lg:px-32 px-5 py-20" />
+    <Footer class="lg:px-16 xl:px-20 py-20" />
   </div>
 </template>
 

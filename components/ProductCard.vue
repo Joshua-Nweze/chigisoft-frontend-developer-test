@@ -9,7 +9,7 @@
                 <div v-for="product in products">
                     <NuxtLink :to="`/product/${product.id}`">
                         <div>
-                            <img :src="product.image" :alt="`${product.title} image`" class="h-[406px] w-full">
+                            <img :src="product.image" :alt="`${product.title} image`" class="h-[306px] w-full">
                         </div>
                         <div class="font-bold"> {{ product.title }} </div>
                         <div class="text-[#787879]">${{ product.price }}</div>
