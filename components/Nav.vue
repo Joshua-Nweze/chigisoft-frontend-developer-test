@@ -30,7 +30,7 @@
 
                 <NuxtLink to="/cart" class="relative flex items-center gap-2 p-2">
                     <CartSvg/> <span class="hidden md:block">Cart</span> 
-                    <div class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-blue-500 border-2 border-white rounded-full -top-2 -end-2">{{ cart.length }}</div>
+                    <div class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-blue-500 border-2 border-white rounded-full -top-2 -end-2">{{ totalCartProducts }}</div>
                 </NuxtLink>
                 
                 <div class="flex lg:hidden gap-2 items-center"> <MenuSvg/> <span class="hidden md:block" >Menu</span> </div>
@@ -61,5 +61,5 @@ import MenuSvg from '~/assets/icons/menu.svg.vue';
 
 import { useCartStore } from '~/store/useCart';
 
-let { cart } = storeToRefs(useCartStore())
+let { totalCartProducts } = storeToRefs(useCartStore())
 </script>

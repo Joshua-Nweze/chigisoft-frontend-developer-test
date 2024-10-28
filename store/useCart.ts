@@ -38,16 +38,12 @@ export const useCartStore = defineStore("cart", {
     },
 
     getters: {
-        totalCartPrice() {
-            let total = 0
-            
-            if (this.cart.length > 0) {
-                this.cart.map((product) => {
-                    total += product.price * product.quantity
-                })
-            }
+        totalCartPrice(state) {
+            return state.cart.reduce((total, product) => total + product.price * product.quantity, 0);
+        },
 
-            return total
+        totalCartProducts(state){
+            return state.cart.reduce((total, product) => total + product.quantity, 0)
         }
     }
 });

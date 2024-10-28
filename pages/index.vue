@@ -15,7 +15,7 @@
 
             <ProductCard header="New arrivals" :products="products.slice(3, 6)"/>
 
-            <ProductCard header="Top picks" :products="products.slice(8, 11)"/>
+            <ProductCard header="Top picks" :products="products.slice(8)"/>
 
         </div>
     </div>

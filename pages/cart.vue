@@ -12,8 +12,8 @@
                 >
                 
                     <div class="flex gap-5">
-                        <div class="w-1/5">
-                            <img :src="product.image" alt="" class="h-[80px] w-full">
+                        <div class="w-1/5  flex justify-center">
+                            <img :src="product.image" alt="" class="h-[80px] lg:w-1/2">
                         </div>
     
                         <div class="flex flex-col w-4/5">
@@ -68,7 +68,7 @@
                     <div class="font-bold">SUMMARY</div>
                     <div class="flex">
                         <div class="flex w-1/2">Subtotal</div>
-                        <div class="flex w-1/2 justify-end">${{ totalCartPrice }}</div>
+                        <div class="flex w-1/2 justify-end">${{ totalCartPrice.toFixed(2) }}</div>
                     </div>
                     <div class="flex">
                         <div class="flex w-1/2">Shipping fee</div>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="flex">
                         <div class="flex w-1/2">Total</div>
-                        <div class="flex w-1/2 justify-end text-lg font-bold">${{ totalCartPrice }}</div>
+                        <div class="flex w-1/2 justify-end text-lg font-bold">${{ totalCartPrice.toFixed(2) }}</div>
                     </div>
                     <Button>Proceed to checkout</Button>
 
@@ -98,9 +98,9 @@ import { useProductsStore } from '~/store/useProduct';
 import { ICart } from '~/types/CartTypes'
 
 let { products } = storeToRefs(useProductsStore())
-let { cart } = storeToRefs(useCartStore())
+let { cart, totalCartPrice } = storeToRefs(useCartStore())
 
-let { increaseQuantity, decreaseQuantity, removeFromCart, totalCartPrice } = useCartStore()
+let { increaseQuantity, decreaseQuantity, removeFromCart } = useCartStore()
 
 let feedback = ref<string | null>(null)
 
