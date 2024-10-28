@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="relative">
-            <img src="~/assets/images/hero.png" alt="" class="lg:h-[600px] w-full">
+            <img src="~/assets/images/hero.png" alt="" class="lg:h-[600px] h-[500px] w-full">
             
             <div class="absolute inset-0 mt-10 lg:mt-20 flex flex-col items-center text-2xl font-bold">
                 New Arrivals in Computing

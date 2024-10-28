@@ -9,7 +9,7 @@
                 <div class="flex gap-2">
                     <input
                         type="text"
-                        class="block w-72 h-10 rounded-lg border-1 py-1.5 px-2 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        class="block h-10 rounded-lg border-1 py-1.5 px-2 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                         placeholder="Email address"
                     />
                     <Button>Subscribe</Button>

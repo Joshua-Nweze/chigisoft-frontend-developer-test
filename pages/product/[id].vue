@@ -14,7 +14,7 @@
                 </div>
 
                 <div class="w-full">
-                    <img :src="product?.image" alt="" class="lg:h-[500px] w-full">
+                    <img :src="product?.image" alt="" class="lg:h-[500px] h-[306px] w-full">
                 </div>
             </div>
             <div class="grid gap-10">

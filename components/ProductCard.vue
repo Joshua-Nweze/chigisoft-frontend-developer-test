@@ -5,7 +5,7 @@
             <div>{{ header }}</div>
         </div>
         <div v-if="products.length != 0">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-24">
                 <div v-for="product in products">
                     <NuxtLink :to="`/product/${product.id}`">
                         <div>
